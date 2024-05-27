@@ -57,6 +57,7 @@ export default function App() {
 		]);
 	}
 
+
 	function deleteTask(index) {
 		var clonedTasks = [...tasks];
 
@@ -77,6 +78,7 @@ export default function App() {
 		}
 	}
 
+	
 	function saveTasks(tasks) {
 		localStorage.setItem('tasks', JSON.stringify(tasks));
 	}
