@@ -12,7 +12,7 @@ import {
 } from '@mantine/core';
 import { useState, useRef, useEffect } from 'react';
 import { MoonStars, Sun, Trash } from 'tabler-icons-react';
-
+import { MantineColorSchemeProvider } from '@mantine/core';
 import {
 	MantineProvider,
 	ColorSchemeProvider,
