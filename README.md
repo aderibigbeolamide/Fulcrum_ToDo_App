@@ -3,7 +3,7 @@
 
 
 
-## 😃 Features:
+## Features:
 
 - ➕ Add todos
 - 🗑️ Delete todos
