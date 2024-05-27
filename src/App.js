@@ -8,12 +8,12 @@ import {
     Group,
     Card,
     ActionIcon,
-    Code,
-    MantineProvider,
-    ColorScheme,
 } from '@mantine/core';
 import { useState, useRef, useEffect } from 'react';
 import { MoonStars, Sun, Trash } from 'tabler-icons-react';
+import {
+    MantineProvider,
+} from '@mantine/core';
 import { useColorScheme } from '@mantine/hooks';
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 
@@ -21,7 +21,6 @@ export default function App() {
     const [tasks, setTasks] = useState([]);
     const [opened, setOpened] = useState(false);
 
-    const preferredColorScheme = useColorScheme();
     const [colorScheme, setColorScheme] = useLocalStorage({
         key: 'mantine-color-scheme',
         defaultValue: 'light',
@@ -170,6 +169,7 @@ export default function App() {
                                     </Card>
                                 );
                             }
+                            return null; // Add this line to ensure map returns a value
                         })
                     ) : (
                         <Text size={'lg'} mt={'md'} color={'dimmed'}>
