@@ -140,7 +140,7 @@ export default function App() {
 									fontFamily: `Greycliff CF, ${theme.fontFamily}`,
 									fontWeight: 900,
 								})}>
-								My Tasks
+								Fulcrum Tasks
 							</Title>
 							<ActionIcon
 								color={'blue'}
