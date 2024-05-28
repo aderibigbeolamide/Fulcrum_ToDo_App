@@ -174,7 +174,7 @@ export default function App() {
 										</Card>
 									);
 								}
-								return null;
+								// return null;
 							})
 						) : (
 							<Text size={'lg'} mt={'md'} color={'dimmed'}>
